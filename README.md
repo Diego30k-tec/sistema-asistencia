@@ -2,16 +2,6 @@
 ### Employee Attendance System
 Aplicación web para el registro y gestión de asistencia del personal, desarrollada en **PHP puro con arquitectura MVC desde cero**, **Programación Orientada a Objetos (POO)**, **PDO** y **MariaDB** como base de datos.
 
-## Tabla de Contenidos
-
-- [Descripción del Negocio](#-1-descripción-del-negocio)
-- [Problema y Solución](#-2-problema-y-solución)
-- [Preanálisis](#-3-preanálisis)
-- [Análisis de Requisitos](#-4-análisis-de-requisitos)
-- [Stack Tecnológico](#-stack-tecnológico)
-- [Arquitectura del Proyecto](#-arquitectura-del-proyecto)
-- [Instalación](#-instalación)
-
 ## 1. Descripción del Negocio
 
 Las organizaciones modernas necesitan gestionar la asistencia de su personal de forma precisa y centralizada. Este sistema reemplaza los registros manuales en papel o planillas físicas, eliminando problemas como:
@@ -88,7 +78,6 @@ Desarrollar una aplicación web con **PHP + POO + MVC** que permita:
 - Módulo de asistencia: registro de entrada/salida e historial
 - Dashboard con resumen de asistencias del día
 - Layouts reutilizables (header, footer, navbar) — principio DRY
-- Base de datos con `schema.sql` y datos de prueba `seeds.sql`
 
 #### Fuera del alcance
 - Integración con dispositivos biométricos
@@ -102,9 +91,9 @@ Desarrollar una aplicación web con **PHP + POO + MVC** que permita:
 ## 4. Análisis de Requisitos
 
 ### 4.1 Requisitos Funcionales
-
+Falta
 ### 4.2 Requisitos No Funcionales
-
+Falta
 ## Stack Tecnológico
 
 | Capa | Tecnología |
@@ -130,7 +119,7 @@ El sistema aplica **POO** y **MVC** implementado desde cero. Los 4 pilares de PO
 
 ### Requisitos previos
 - PHP 8+
-- Apache con `mod_rewrite` habilitado (XAMPP recomendado)
+- Servidor web local o hosting
 - MariaDB / MySQL
 
 ### Pasos
@@ -152,6 +141,7 @@ cp .env.example .env
 ```
 
 ## TRELLO
+Falta integrar
 
 ### DIAGRAMA DE FIGMA UI/UX
 
@@ -197,12 +187,33 @@ foreign key (id_empleado) references empleado(id_empleado)
 ```
 
 ### Diagrama Entidad-Relacion (DER)
+Falta integrar
 
  
 ### Modelo Relacional (MR)
 ![MODELO_RELACIONAL](https://raw.githubusercontent.com/ojitoslanda/testing/refs/heads/master/img/db.png)
 
 ### Cardinalidades
+
+Las cardinalidades describen cuántos registros de una tabla se relacionan con cuántos de otra.
+
+**cargo → empleado (1:N)**
+Un cargo puede estar asignado a muchos empleados.
+Un empleado solo puede tener un cargo.
+```
+cargo (1) -----< empleado (N)
+```
+
+**empleado → asistencia (1:N)**
+Un empleado puede tener muchos registros de asistencia (uno por día).
+Cada registro de asistencia pertenece a un solo empleado.
+```
+empleado (1) -----< asistencia (N)
+```
+
+**usuario**
+La tabla usuario es independiente. No se relaciona con empleado ni con asistencia.
+Representa las cuentas de acceso al sistema (administradores), no a los empleados.
 
 
 
