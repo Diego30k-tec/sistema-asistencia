@@ -35,14 +35,14 @@
             <a href="<?php echo BASE_URL; ?>/empleados"
                 class="<?php echo $rutaActual === 'empleados' ? "activo" : ""; ?>" >
                 <i class="fa-solid fa-clipboard-list"></i>
-                <span>Reportes</span>
+                <span>Empleados</span>
             </a>
         </li>
         <li>
             <a href="<?php echo BASE_URL; ?>/asistencias"
                 class="<?php echo $rutaActual === 'asistencias' ? "activo" : ""; ?>" >
                 <i class="fa-solid fa-clipboard-user"></i>
-                <span>Reportes</span>
+                <span>Asitencias</span>
             </a>
         </li>
         <li class="nav-logout">
