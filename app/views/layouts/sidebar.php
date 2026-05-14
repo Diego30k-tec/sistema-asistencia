@@ -38,6 +38,13 @@
                 <span>Reportes</span>
             </a>
         </li>
+        <li>
+            <a href="<?php echo BASE_URL; ?>/asistencias"
+                class="<?php echo $rutaActual === 'asistencias' ? "activo" : ""; ?>" >
+                <i class="fa-solid fa-clipboard-user"></i>
+                <span>Reportes</span>
+            </a>
+        </li>
         <li class="nav-logout">
             <a href="<?php echo BASE_URL; ?>/logout" id="btn-logout">
                 <i class="fa-solid fa-right-from-bracket"></i>
