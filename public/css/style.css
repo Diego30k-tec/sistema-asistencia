@@ -1,0 +1,16 @@
+.header{
+    background-image: url(../image/header.webp);
+    background-position: center;
+    background-size: cover;
+}
+.title {
+    color: rgb(255 92 27);
+}
+
+.btn-secondary{
+    background: #25d45f !important;
+    border: none;
+}
+.vh-50{
+    height: 50vmin;
+}

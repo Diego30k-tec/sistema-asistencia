@@ -17,9 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
     hamburger.addEventListener("click", openSidebar);
     overlay.addEventListener("click", closeSidebar);
 
-    // Nav links: marcar activo y cerrar sidebar 
-    
-
     //  Cerrar sesión
     document.getElementById("btn-logout").addEventListener("click", (e) => {
         e.preventDefault();
