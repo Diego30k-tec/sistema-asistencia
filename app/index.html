@@ -46,33 +46,84 @@
           <h1 class="title">Bodega local de viveres</h1>
           <!--Descripcion bdg-->
           <p>¡Te invitamos a registrarte hoy mismo para adquirir todo tipo de producto para tu hogar!</p>
-          <a href="" class="btn btn-secondary text-light px-3 py-2">Únete</a>
+          <a href="" class="btn btn-secondary text-light px-3 py-2" data-bs-toggle="modal" data-bs-target="#modal">Únete</a>
         </div>
       </div>
     </div>
-    
+
   </header>
   <!--Experiencia-->
     <div class="py-5" id="experiencia">
       <div class="container">
         <div class="row g-5 py-5">
           <div class="col-md-4">
-            <h5 class="fw-bold">Item1</h5>
-            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, eaque.</p>
+            <h5 class="fw-bold">Variedad de Productos</h5>
+            <p class="text-muted">Abastecemos productos frescos y de alta calidad para nuestros clientes.</p>
           </div>
           <div class="col-md-4">
-            <h5 class="fw-bold">Item1</h5>
-            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, eaque.</p>
+            <h5 class="fw-bold">Atención Personalizada</h5>
+            <p class="text-muted">Ofrecemos una amplia selección de alimentos para satisfacer todas sus necesidades.</p>
           </div>
           <div class="col-md-4">
-            <h5 class="fw-bold">Item1</h5>
-            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, eaque.</p>
+            <h5 class="fw-bold">Compromiso con el Cliente</h5>
+            <p class="text-muted">Nuestro equipo está siempre disponible para ayudar y asesorar a nuestros clientes.</p>
           </div>
         </div>
       </div>
     </div>
+  
+  <!--Modal-->
+<div id="modal" class="modal fade">
+  <div class="modal-dialog modal-lg mt-3">
+    
+    <div class="modal-content">
+      
+      <div class="modal-body">
+
+        <div class="text-end">
+          <button type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal">
+          </button>
+        </div>
+
+        <div class="card-title text-center pb-3">
+          <h3>Iniciar Sesión</h3>
+        </div>
+
+        <form action="" method="POST">
+
+          <label for="user" class="form-label">Usuario:</label>
+
+          <input id="user"
+                 type="text"
+                 name="user"
+                 class="form-control mb-3"
+                 required>
+
+          <label for="pass" class="form-label">Contraseña:</label>
+
+          <input id="pass"
+                 type="password"
+                 name="pass"
+                 class="form-control mb-3"
+                 required>
+
+          <button type="submit"
+                  class="btn btn-primary w-100">
+            Enviar
+          </button>
+
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+    </div>  
   <!--Footer-->
-  <footer class="continer p-3">
+  <footer class="footer continer p-3">
     <p class="text-center small text-muted">Copyright &copy; Bodega 2026</p>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
