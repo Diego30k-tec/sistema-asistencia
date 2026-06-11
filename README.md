@@ -1,16 +1,10 @@
-# Sistema de Control de Asistencia de Empleados
-### Employee Attendance System
-Aplicación web para el registro y gestión de asistencia del personal, desarrollada en **PHP puro con arquitectura MVC desde cero**, **Programación Orientada a Objetos (POO)**, **PDO** y **MariaDB** como base de datos.
-
-## 1. Descripción del Negocio
-
-Las organizaciones modernas necesitan gestionar la asistencia de su personal de forma precisa y centralizada (Solo de un turno). Este sistema reemplaza los registros manuales en papel o planillas físicas, eliminando problemas como:
-
-- Registros incompletos o manipulados
-- Alto costo administrativo por procesar asistencias manualmente
-- Imposibilidad de generar reportes históricos de forma automática
-- Falta de trazabilidad y auditoría sobre las marcaciones
-- Dependencia de personal para consolidar información
+## 1. Descripcion del negocio
+Nombre: Bodega Monica <br>
+Tamaño: Pequeña empresa, operacion individual o familiar <br>
+Contexto: Negocio muy comun en el Peru en el cual compran productos de primera
+necesidad (alimentos, limpieza, bebidas) al por mayor
+para venderlos por unidad al consumidor final. <br>
+Justificacion: Se necesita un sistema digital que faciliter sumar el monto de la venta que hasta ahoras se realiza de forma manual un cuaderno, para asi evitar errores al monto que el cliente haga su compra.
 
 ## 2. Problema y Solución
 
