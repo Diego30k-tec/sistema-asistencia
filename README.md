@@ -221,6 +221,6 @@ empleado (1) -----< asistencia (N)
 La tabla usuario es independiente. No se relaciona con empleado ni con asistencia.
 Representa las cuentas de acceso al sistema (administradores), no a los empleados.
 
-
+![Sistema Instalado](https://github.com/Diego30k-tec/bodega_monica/blob/main/public/image/IMG_20260611_121904.jpg.jpeg)
 
 
