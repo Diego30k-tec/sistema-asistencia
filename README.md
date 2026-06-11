@@ -6,10 +6,16 @@ necesidad (alimentos, limpieza, bebidas) al por mayor
 para venderlos por unidad al consumidor final. <br>
 Justificacion: Se necesita un sistema digital que faciliter sumar el monto de la venta que hasta ahoras se realiza de forma manual un cuaderno, para asi evitar errores al monto que el cliente haga su compra.
 
-## 2. Problema y Solución
-
-### Problema Identificado
-Las empresas carecen de un sistema digital accesible para registrar, monitorear y gestionar la asistencia de sus empleados. El control manual genera imprecisiones, pérdidas de información y dificulta la toma de decisiones basadas en datos confiables.
+## 2. Identificar el problema y la solución
+El negocio opera de forma manual a travez del uso de un cuaderno. Esto genera tres problemas:
+Problema <br>
+- Pérdida de dinero: Los "fiados" se olvidan, se anotan mal o el papel se pierde.
+- El stock: El negocio no sabe que se acabó la leche hasta que un cliente se lo pide y no hay.
+- Ineficiencia: Tardar demasiado en buscar precios o calcular totales en horas pico.
+La Solución <br>
+Un sistema de gestión centralizado que automatice el control de inventario y vincule las ventas directamente <br>
+con un historial de deudas por cliente, haciendo que cada producto este registrado.
+(public/image/IMG_20260611_122114.jpg.jpeg)
 
 ### Causas
 - Ausencia de una herramienta digital centralizada para marcar asistencia
