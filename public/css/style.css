@@ -43,10 +43,72 @@ form input {
     transition: 0.3s;
     font-size: 14px;
 }
-.p-3{
-    background-color: #41814dc4;
-}
+
 .btn-primary{
     background-color: #41814dc4 !important;
     border: none !important;
+}
+
+/*Esperiencia*/
+/* Contenedor de la tarjeta opcional, por si quieres controlar el flujo */
+.project-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* El contenedor de la imagen fuerza a que mantenga una proporción */
+.project-img-wrap {
+    width: 100%;
+    height: 220px; /* Altura fija para que todas las imágenes midan igual */
+    overflow: hidden;
+    border-radius: 4px; /* Un ligero toque estético opcional */
+}
+
+/* La imagen mágica que se adapta y se alinea perfectamente */
+.project-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Evita que la imagen se estire o se aplaste */
+    object-position: center; /* Centra el contenido visual */
+}
+
+/*Footer*/
+/* Contenedor principal del Footer con tu color personalizado */
+.footer-custom {
+    background-color: #41814dc4;
+    /* Al usar un color con transparencia (al final tiene 'c4'), un backdrop-filter 
+       puede dar un efecto sutil si hay contenido detrás, estilo Glassmorphism */
+    backdrop-filter: blur(4px); 
+}
+
+/* Color destacado para el nombre de la bodega (Blanco puro para máximo contraste) */
+.text-highlight {
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15); /* Sutil sombra para mejorar lectura */
+}
+
+/* Texto de copyright en un blanco semitransparente para que no compita con el título */
+.footer-copyright {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+/* Espaciado estético para el título de contactos */
+.tracking-wider {
+    letter-spacing: 1px;
+    font-size: 0.95rem;
+}
+
+/* Estilos para los elementos de la lista de contacto */
+.footer-contact-list li {
+    font-size: 0.9rem;
+    color: #ffffff; /* Texto blanco para que sea perfectamente legible sobre el verde */
+}
+
+/* Estilo específico para los iconos de Font Awesome */
+.footer-icon {
+    color: rgba(255, 255, 255, 0.8); /* Iconos ligeramente más suaves que el texto */
+    width: 20px; /* Ancho fijo para que los iconos queden perfectamente alineados verticalmente */
+    text-align: center; /* Centra el icono dentro de su zona asignada */
 }

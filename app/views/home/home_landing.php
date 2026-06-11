@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="../public/css/style.css">
+  <link rel="stylesheet" href="<?php echo BASE_URL; ?>/public/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
@@ -29,7 +30,7 @@
                 <a class="nav-link active" aria-current="page" href="#">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Experiencia</a>
+                <a class="nav-link" href="#experiencia">Experiencia</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Contactos</a>
@@ -54,23 +55,42 @@
   </header>
   <!--Experiencia-->
     <div class="py-5" id="experiencia">
-      <div class="container">
-        <div class="row g-5 py-5">
-          <div class="col-md-4">
-            <h5 class="fw-bold">Variedad de Productos</h5>
-            <p class="text-muted">Abastecemos productos frescos y de alta calidad para nuestros clientes.</p>
+  <div class="container">
+    <div class="row g-5 py-5 justify-content-center">
+      
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="project-card">
+          <div class="project-img-wrap">
+            <img src="<?php echo BASE_URL; ?>/public/image/Variedad.webp" alt="Variedad" class="project-img">
           </div>
-          <div class="col-md-4">
-            <h5 class="fw-bold">Atención Personalizada</h5>
-            <p class="text-muted">Ofrecemos una amplia selección de alimentos para satisfacer todas sus necesidades.</p>
-          </div>
-          <div class="col-md-4">
-            <h5 class="fw-bold">Compromiso con el Cliente</h5>
-            <p class="text-muted">Nuestro equipo está siempre disponible para ayudar y asesorar a nuestros clientes.</p>
-          </div>
+          <h5 class="fw-bold mt-3">Variedad de Productos</h5>
+          <p class="text-muted">Abastecemos productos frescos y de alta calidad para nuestros clientes.</p>
         </div>
       </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="project-card">
+          <div class="project-img-wrap">
+            <img src="<?php echo BASE_URL; ?>/public/image/Atencion.webp" alt="Atencion" class="project-img">
+          </div>
+          <h5 class="fw-bold mt-3">Atención Personalizada</h5>
+          <p class="text-muted">Ofrecemos una amplia selección de alimentos para satisfacer todas sus necesidades.</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="project-card">
+          <div class="project-img-wrap">
+            <img src="<?php echo BASE_URL; ?>/public/image/compromiso.webp" alt="Compromiso" class="project-img">
+          </div>
+          <h5 class="fw-bold mt-3">Compromiso con el Cliente</h5>
+          <p class="text-muted">Nuestro equipo está siempre disponible para ayudar y asesorar a nuestros clientes.</p>
+        </div>
+      </div>
+
     </div>
+  </div>
+</div>
   
   <!--Modal-->
 <div id="modal" class="modal fade">
@@ -122,10 +142,34 @@
 </div>
       </div>
     </div>  
-  <!--Footer-->
-  <footer class="footer continer p-3">
-    <p class="text-center small text-muted">Copyright &copy; Bodega 2026</p>
-  </footer>
+<!--Footer-->
+<footer class="footer-custom py-4 mt-5 text-white">
+  <div class="container">
+    <div class="row align-items-center g-4">
+      
+      <div class="col-12 col-md-6 text-center text-md-start">
+        <h4 class="fw-bold mb-1 text-highlight">Bodega Mónica</h4>
+        <p class="footer-copyright small mb-0">&copy; <?php echo date('Y'); ?> Todos los derechos reservados.</p>
+      </div>
+
+      <div class="col-12 col-md-6 text-center text-md-end">
+        <h5 class="fw-bold text-uppercase mb-3 tracking-wider">Contactos</h5>
+        <ul class="list-unstyled mb-0 footer-contact-list">
+          <li class="mb-2">
+            <i class="fa-solid fa-map-marker-alt me-2 footer-icon"></i>Jr. Ucayali N° 123, Pucallpa
+          </li>
+          <li class="mb-2">
+            <i class="fa-solid fa-phone-alt me-2 footer-icon"></i>+51 987 654 321
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope me-2 footer-icon"></i>contacto@bodegamonica.com
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>

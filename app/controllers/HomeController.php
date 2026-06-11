@@ -6,6 +6,6 @@ class HomeController extends Controller {
 
     // Método por defecto. Se ejecuta cuando el usuario entra a la raíz del proyecto.
     public function index(): void {
-        $this->view('home/landing');
+        $this->view('home/home_landing');
     }
 }
