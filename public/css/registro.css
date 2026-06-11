@@ -1,0 +1,120 @@
+/* ==========================================================================
+   ESTILOS DEL DASHBOARD Y FORMULARIO DE REGISTRO
+   ========================================================================== */
+
+/* Contenedor principal de la página */
+.main-content {
+    padding: 1.5rem;
+    background-color: #ffffff; /* Fondo gris claro típico de dashboards */
+    min-height: 80vh;
+}
+
+/* --- Estilizado del Breadcrumb (Ruta de navegación) --- */
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.breadcrumb i {
+    font-size: 0.75rem;
+    color: #adb5bd;
+}
+
+#breadcrumb-page {
+    color: #212529;
+    font-weight: 600;
+}
+
+/* --- Tarjeta del Formulario (.registro-form) --- */
+.registro-form {
+    background-color: #dddddd;
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Sombra muy sutil */
+    max-width: 600px; /* Evita que el formulario se estire infinitamente */
+    margin: 0 auto; /* Centra la tarjeta en la pantalla */
+}
+
+/* Título del Formulario */
+.registro-form h1 {
+    font-size: 1.75rem;
+    color: #2c3e50;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #eaedf1;
+    padding-bottom: 0.75rem;
+}
+
+/* --- Grupos de Formulario (.form-group) --- */
+.form-group {
+    display: flex;
+    flex-direction: column; /* Coloca la etiqueta ARRIBA del input */
+    margin-bottom: 1.25rem; /* Espaciado uniforme entre campos */
+}
+
+/* Etiquetas (Labels) */
+.form-group label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #4a5568;
+    margin-bottom: 0.5rem;
+}
+
+/* Inputs de Texto, Email y Selects unificados */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group select {
+    width: 100%;
+    padding: 0.65rem 0.75rem;
+    font-size: 0.95rem;
+    color: #333333;
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    transition: all 0.2s ease-in-out;
+    outline: none;
+}
+
+/* Efecto Focus: Cuando el usuario hace clic para escribir */
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #25d45f; /* Usamos el verde de tu marca */
+    box-shadow: 0 0 0 3px rgba(37, 212, 95, 0.15); /* Brillo verde sutil */
+    background-color: #fafdfb;
+}
+
+/* --- Botón Guardar Empleado --- */
+.registro-form .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem; /* Espacio entre el icono de disco y el texto */
+    background-color: #2528d4; /* Tu color verde sólido */
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%; /* Botón ancho completo para móviles y estética moderna */
+    margin-top: 1rem;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 6px rgba(37, 212, 95, 0.2);
+}
+
+/* Hover del Botón */
+.registro-form .btn-primary:hover {
+    background-color: #4338ca;
+    box-shadow: 0 6px 12px rgba(30, 184, 80, 0.3);
+    transform: translateY(-1px);
+}
+
+.registro-form .btn-primary:active {
+    transform: translateY(0);
+}

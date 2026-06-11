@@ -6,6 +6,7 @@
     <title><?php echo TITLE_BUSINESS; ?> - Registro de Empleado</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/public/css/dashboard.css">
+    <link rel="stylesheet" href="<?php echo BASE_URL; ?>/public/css/registro.css">
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/public/css/botones.css">
 </head>
 <body>

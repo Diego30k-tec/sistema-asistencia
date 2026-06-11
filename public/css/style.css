@@ -1,18 +1,38 @@
-.header{
-    background-image: url(../image/header.webp);
+.header {
+    /* Agregamos un linear-gradient sutil. Esto actúa como una capa oscura transparente 
+       para que el texto blanco resalte, especialmente sobre las caras de las personas en móvil */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(../image/header.webp);
     background-position: center;
     background-size: cover;
-}
-.title {
-    color: rgb(255 92 27);
+    background-repeat: no-repeat;
+    
+    /* CAMBIO CLAVE: En lugar de vmin, usamos min-height. 
+       Garantiza que como mínimo mida el 60% del alto de la pantalla, 
+       pero si el texto es mucho, el contenedor crecerá en lugar de romperse. */
+    min-height: 65vh; 
 }
 
-.btn-secondary{
-    background: #25d45f !important;
-    border: none;
+.title {
+    color: #ff6a28; /* Un naranja ligeramente más vivo para mejorar contraste */
+    font-size: calc(1.8rem + 1.5vw); /* Tipografía responsiva gracias a Bootstrap/CSS */
 }
-.vh-50{
-    height: 50vmin;
+
+/* Un pequeño truco de sombra para que el párrafo no se confunda con el fondo */
+.shadow-text {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+/* Botón personalizado limpio sin usar !important */
+.btn-success-custom {
+    background-color: #25d45f !important;
+    color: #ffffff;
+    border: none;
+    transition: background-color 0.2s ease;
+}
+
+.btn-success-custom:hover {
+    background-color: #1eb850;
+    color: #ffffff;
 }
 
 /* FORMULARIO */

@@ -14,45 +14,34 @@
 
 <body>
   <!--Header-->
-  <header class="header">
-    <div class="container vh-50">
-      <!--Navbar-->
-      <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container-fluid fw-bold">
-          <a class="navbar-brand" href="#">Bodega</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#experiencia">Experiencia</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contactos</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
-      <!--Descripcion-->
-      <div class="row h-100">
-        <div class="col-6 text-white">
-          <!--Title-->
-          <h1 class="title">Bodega local de viveres</h1>
-          <!--Descripcion bdg-->
-          <p>¡Te invitamos a registrarte hoy mismo para adquirir todo tipo de producto para tu hogar!</p>
-          <a href="" class="btn btn-secondary text-light px-3 py-2" data-bs-toggle="modal" data-bs-target="#modal">Únete</a>
-        </div>
+  <header class="header d-flex flex-column justify-content-between">
+  <nav class="navbar navbar-expand-lg navbar-dark w-100">
+    <div class="container-fluid fw-bold">
+      <a class="navbar-brand" href="#">Bodega</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experiencia">Experiencia</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contactos</a></li>
+        </ul>
       </div>
     </div>
+  </nav>
 
-  </header>
+  <div class="container my-auto py-4">
+    <div class="row">
+      <div class="col-12 col-md-6 text-white text-center text-md-start">
+        <h1 class="title fw-bold mb-3">Bodega local de víveres</h1>
+        <p class="lead mb-4 shadow-text">¡Te invitamos a registrarte hoy mismo para adquirir todo tipo de producto para tu hogar!</p>
+        <a href="" class="btn btn-success-custom px-4 py-2 fw-bold" data-bs-toggle="modal" data-bs-target="#modal">Únete</a>
+      </div>
+    </div>
+  </div>
+</header>
   <!--Experiencia-->
     <div class="py-5" id="experiencia">
   <div class="container">
@@ -111,7 +100,7 @@
           <h3>Iniciar Sesión</h3>
         </div>
 
-        <form action="" method="POST">
+        <form action="<?php  echo BASE_URL;  ?>/login" method="POST">
 
           <label for="user" class="form-label">Usuario:</label>
 
