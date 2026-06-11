@@ -41,16 +41,13 @@ Desarrollar una aplicación web con **PHP + POO + MVC** que permita:
 ## 3. Preanálisis
 
 ### Necesidades Identificadas
-
-1. Registrar quién entra y sale, con fecha y hora exacta
-2. Panel de control con el estado de asistencia del día
-3. Administrar el catálogo de empleados (crear, editar, eliminar)
-4. Organizar empleados por departamentos
-5. Consultar historial de asistencias filtrado por empleado y período
-6. Autenticar usuarios para proteger la información del sistema
-7. Diferenciar permisos entre administrador y empleado
+- Digitalizar el catálogo de productos y precios.
+- Llevar un registro histórico de quién debe, cuánto debe y cuándo compró.
+- Reducir el tiempo de atención al cliente en el mostrador.
 
 ### Estudio de Viabilidad
+- Operativa: Siempre que la interfaz sea minimalista y diseñada para alguien que no es experto en computación
+- Económica: Altamente viable. El uso de software open source (Apache, MySQL) reduce los costos de licencia a cero.
 
 #### Viabilidad Técnica
 - PHP 8+ disponible en prácticamente cualquier servidor web
@@ -74,8 +71,6 @@ Desarrollar una aplicación web con **PHP + POO + MVC** que permita:
 #### Dentro del alcance
 - Autenticación con sesiones PHP y roles (administrador / empleado)
 - Módulo de empleados: CRUD completo
-- Módulo de departamentos: gestión de áreas
-- Módulo de asistencia: registro de entrada/salida e historial
 - Dashboard con resumen de asistencias del día
 - Layouts reutilizables (header, footer, navbar) — principio DRY
 
@@ -91,9 +86,20 @@ Desarrollar una aplicación web con **PHP + POO + MVC** que permita:
 ## 4. Análisis de Requisitos
 
 ### 4.1 Requisitos Funcionales
-Falta
+| Codigo | Descripcion |
+|---|---|
+| RF01 | El sistema debe permitir agregar, editar y eliminar productos. |
+| RF02 | El sistema debe calcular el total y descontar stock al realizar una venta.|
+| RF03 | El sistema debe permitir elegir entre pago en "Efectivo" o "Fiado" |
+| RF04 | El sistema debe permitir asignar una venta como "pendiente" a un cliente específico. |
+| RF05 | El sistema debe registrar ventas seleccionando productos y calculando el total automáticamente |
 ### 4.2 Requisitos No Funcionales
-Falta
+| Codigo | Tipo | Descripcion |
+|---|---|---|
+| RNF01 | Rendimiento | El sistema debe procesar el registro de una venta y generar la respuesta en menos de 2 segundos. |
+| RNF02 | Usabilidad | La interfaz debe ser simple y fácil de usar, pensada para una navegación rápida |
+| RNF03 | Seguridad | El sistema debe requerir un usuario y contraseña para acceder a la gestión de inventario y deudas. |
+| RNF03 | Seguridad | El sistema debe ser accesible desde cualquier navegador web moderno |
 ## Stack Tecnológico
 
 | Capa | Tecnología |
