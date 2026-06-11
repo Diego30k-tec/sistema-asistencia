@@ -12,10 +12,10 @@ Problema <br>
 - Pérdida de dinero: Los "fiados" se olvidan, se anotan mal o el papel se pierde.
 - El stock: El negocio no sabe que se acabó la leche hasta que un cliente se lo pide y no hay.
 - Ineficiencia: Tardar demasiado en buscar precios o calcular totales en horas pico.
+![Problema](https://github.com/Diego30k-tec/bodega_monica/blob/main/public/image/IMG_20260611_122114.jpg.jpeg)
 La Solución <br>
 Un sistema de gestión centralizado que automatice el control de inventario y vincule las ventas directamente <br>
-con un historial de deudas por cliente, haciendo que cada producto este registrado.
-(public/image/IMG_20260611_122114.jpg.jpeg)
+con un historial de deudas por cliente, haciendo que cada producto este registrado.<br>
 
 ### Causas
 - Ausencia de una herramienta digital centralizada para marcar asistencia
