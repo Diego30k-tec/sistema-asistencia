@@ -21,6 +21,7 @@
             <span id="breadcrumb-page">Registro</span>
         </nav>
 
+
         <div class="main-content">
             <section class="registro-form">
                 <h1>Registrar empleado</h1>
