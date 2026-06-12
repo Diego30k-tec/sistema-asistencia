@@ -147,7 +147,9 @@ cp .env.example .env
 ```
 
 ## TRELLO
-Falta integrar
+[mi tablero de trello](https://trello.com/b/YnIg8VUR/bodega-monica)
+![TRELLO](recursos/Trello.png)
+
 
 ### DIAGRAMA DE FIGMA UI/UX
 
