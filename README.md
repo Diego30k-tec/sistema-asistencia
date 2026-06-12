@@ -148,6 +148,7 @@ cp .env.example .env
 
 ## TRELLO
 [mi tablero de trello](https://trello.com/invite/b/69bc3ebd04e769576e256a5c/ATTI24d32c437e8b57a2c0fcc1f43d46065dA366854E/bodega)
+![TRELLO](https://github.com/Diego30k-tec/bodega_monica/blob/main/public/image/Captura%20de%20pantalla%202026-06-12%20132721.png)
 
 
 ### DIAGRAMA DE FIGMA UI/UX
