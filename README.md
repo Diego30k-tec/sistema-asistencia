@@ -17,8 +17,7 @@ Problema <br>
 ### Causas
 - Ausencia de una herramienta digital centralizada para marcar asistencia
 - Los registros en papel se pierden, deterioran o se alteran fácilmente
-- No existe diferenciación de roles entre quién administra y quién solo consulta
-- Es imposible generar reportes históricos de forma automática
+
 
 ### Efectos
 - Pérdida económica por pago incorrecto de horas trabajadas
@@ -32,8 +31,7 @@ Desarrollar una aplicación web con **PHP + POO + MVC** que permita:
 - Autenticar usuarios con roles diferenciados (administrador / empleado)
 - Registrar asistencia con fecha y hora exactas usando PDO y MariaDB
 - Gestionar el catálogo de empleados y departamentos (CRUD completo)
-- Consultar y filtrar el historial de asistencias por empleado y fecha
-- Visualizar un dashboard con el estado de asistencia del día en curso
+- Visualizar un dashboard las ventas del día.
 - Un sistema de gestión centralizado que automatice el control de inventario y vincule las ventas directamente <br>
 con un historial de deudas por cliente, haciendo que cada producto este registrado.
 ## 3. Preanálisis
@@ -67,9 +65,8 @@ con un historial de deudas por cliente, haciendo que cada producto este registra
 ### Alcance del Sistema
 
 #### Dentro del alcance
-- Autenticación con sesiones PHP y roles (administrador / empleado)
-- Módulo de empleados: CRUD completo
-- Dashboard con resumen de asistencias del día
+- Módulo de clientes: CRUD completo
+- Dashboard con resumen de ventas del día
 - Layouts reutilizables (header, footer, navbar) — principio DRY
 
 #### Fuera del alcance
@@ -113,11 +110,6 @@ con un historial de deudas por cliente, haciendo que cada producto este registra
 ## Arquitectura del Proyecto
 
 El sistema aplica **POO** y **MVC** implementado desde cero. Los 4 pilares de POO en el proyecto:
-
-### Flujo de una Petición
-
-
-### Estructura del Proyecto
 
 ## Instalación
 
