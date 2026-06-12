@@ -154,8 +154,8 @@ cp .env.example .env
 
 ## Base de datos
 ```sql
-create database senai_asistencia;
-use senai_asistencia;
+create database tienda_monica;
+use tienda_monica;
 
 
 create table cargo (
